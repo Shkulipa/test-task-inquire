@@ -37,16 +37,20 @@ export const postsReducer = (
 };
 
 //Actions
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const fetchPosts = () => ({
 		type: PostsActionTypes.FETCH_POSTS,
 	}),
+	// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 	fetchPostsSuccess = (payload: PostType[]) => ({
 		type: PostsActionTypes.FETCH_POSTS_SUCCESS,
 		payload,
 	}),
+	// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 	fetchPostsError = () => ({
 		type: PostsActionTypes.FETCH_POSTS_ERROR,
 	}),
+	// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 	resetFirstFetch = () => ({
 		type: PostsActionTypes.RESET_FIRST_FETCH,
 	});

@@ -1,4 +1,4 @@
-const shortString = (string: string, lengthCut: number) => {
+const shortString = (string: string, lengthCut: number): string => {
 	return string.length > lengthCut
 		? string.slice(0, lengthCut) + '...'
 		: string;

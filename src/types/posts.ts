@@ -40,7 +40,7 @@ interface resetFirstFetch {
 
 interface FetchPostsError {
 	type: PostsActionTypes.FETCH_POSTS_ERROR;
-	payload: any;
+	payload: unknown;
 }
 
 export type PostAction =

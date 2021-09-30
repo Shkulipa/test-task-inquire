@@ -2,6 +2,7 @@ import React from 'react';
 import { useField } from 'formik';
 import { TextField } from '@material-ui/core';
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types,@typescript-eslint/no-explicit-any
 export function UiField(props: any): JSX.Element {
 	const [field, { error, touched }] = useField(props);
 	return (
@@ -14,6 +15,7 @@ export function UiField(props: any): JSX.Element {
 	);
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types,@typescript-eslint/no-explicit-any
 export function UiTextarea(props: any): JSX.Element {
 	const [field, { error, touched }] = useField(props);
 
